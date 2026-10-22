@@ -1,9 +1,13 @@
 package greeting
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func Hello(name string) {
-	fmt.Printf("Привет, %s!\n", name)
+	current := time.Now().Format("15:04")
+	fmt.Printf("[%s] Привет, %s!\n", current, name)
 }
 
 func Bye(name string) {
