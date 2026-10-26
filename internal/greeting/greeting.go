@@ -11,5 +11,6 @@ func Hello(name string) {
 }
 
 func Bye(name string) {
+	fmt.Println("--")
 	fmt.Printf("Пока, %s!\n", name)
 }
